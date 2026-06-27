@@ -1,5 +1,5 @@
-import jsonPatch from "fast-json-patch";
 import type { Operation } from "fast-json-patch";
+import jsonPatch from "fast-json-patch";
 import type { z } from "zod";
 import type { SmartObjectConstructor, SmartObjectInstance } from "./types.js";
 

@@ -23,7 +23,8 @@
     "dev": "npm run build && tsx examples/person.ts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "prepublishOnly": "npm run build && npm test"
+    "prepublishOnly": "npm run build && npm test",
+    "prepare": "husky"
   },
   "peerDependencies": {
     "zod": "^4.0.0"
@@ -33,6 +34,9 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.1",
+    "@commitlint/cli": "^21.1.0",
+    "@commitlint/config-conventional": "^21.1.0",
+    "husky": "^9.1.7",
     "tsx": "^4.20.3",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4",
