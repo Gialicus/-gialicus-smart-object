@@ -1,11 +1,11 @@
-# @gialicoletta/smart-object
+# @gialicus/smart-object
 
 Typed TypeScript objects backed by Zod schemas, with an RFC 6902 operation log for every validated change. Use them when you need mutable, type-safe state plus a portable delta trail for audit, sync, or replay — without bolting on a separate change-tracking layer.
 
 ## Installation
 
 ```bash
-npm install @gialicoletta/smart-object zod
+npm install @gialicus/smart-object zod
 ```
 
 Dependencies: [Zod](https://zod.dev) (peer dependency — schema validation) and [fast-json-patch](https://github.com/Starcounter-Jack/JSON-Patch) (RFC 6902 patch application, bundled).
@@ -14,7 +14,7 @@ Dependencies: [Zod](https://zod.dev) (peer dependency — schema validation) and
 
 ```typescript
 import z from "zod";
-import { SmartObject } from "@gialicoletta/smart-object";
+import { SmartObject } from "@gialicus/smart-object";
 
 const Person = SmartObject(z.object({
     name: z.string(),

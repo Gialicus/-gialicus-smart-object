@@ -15,4 +15,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `fromOperations(initial, operations)` static method for deterministic replay
 - Exported types: `Operation`, `SetMethods`, `OperationsAccessor`, `SmartObjectConstructor`, `SmartObjectInstance`
 
-[1.0.0]: https://github.com/gialicoletta/smart-object/releases/tag/v1.0.0
+[1.0.0]: https://github.com/gialicus/smart-object/releases/tag/v1.0.0
