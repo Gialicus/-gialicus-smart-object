@@ -1,0 +1,68 @@
+{
+  "name": "@gialicoletta/smart-object",
+  "version": "1.0.0",
+  "description": "Oggetti TypeScript generati da schemi Zod con getter, set* tipizzati e operazioni JSON Patch",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "check": "biome check .",
+    "check:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "dev": "npm run build && tsx examples/person.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "peerDependencies": {
+    "zod": "^4.0.0"
+  },
+  "dependencies": {
+    "fast-json-patch": "^3.1.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4",
+    "zod": "^4.4.3"
+  },
+  "keywords": [
+    "zod",
+    "json-patch",
+    "typescript",
+    "audit",
+    "sync",
+    "rfc6902",
+    "smart-object",
+    "change-tracking"
+  ],
+  "author": "Gia Licoletta",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gialicoletta/smart-object.git"
+  },
+  "homepage": "https://github.com/gialicoletta/smart-object#readme",
+  "bugs": {
+    "url": "https://github.com/gialicoletta/smart-object/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  }
+}
